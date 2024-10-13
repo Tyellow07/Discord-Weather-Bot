@@ -1,4 +1,4 @@
-#!/bin/bash
+# Discord Weather Bot重新運行腳本
 
 # 激活虛擬環境
 source ~/my-discord-bot/venv/bin/activate
