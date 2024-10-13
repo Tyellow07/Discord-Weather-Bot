@@ -38,5 +38,5 @@ async def 你是誰(ctx):
     await ctx.send('Hi! 我是用來查詢天氣的機器人')
 
 
-bot.run(os.getenv('DISCORD_WEATHER_BOT'))
+bot.run(os.getenv('DISCORD_WEATHER_BOT_TOKEN'))
 
