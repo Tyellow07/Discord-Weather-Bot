@@ -2,6 +2,8 @@ import os
 import discord
 from discord.ext import commands
 
+token = os.getenv("DISCORD_WEATHER_BOT_TOKEN")
+
 # 使用 intents 以確保機器人有權限接收事件
 intents = discord.Intents.default()
 intents.message_content = True  # 啟用讀取訊息內容的權限
@@ -25,7 +27,7 @@ async def on_message(message):
         await message.channel.send('不早安')
     
     if '午安' in message.content:
-        await message.channel.send('不早不晚安')
+        await message.channel.send('牛安')
 
     await bot.process_commands(message)
 
@@ -38,5 +40,5 @@ async def 你是誰(ctx):
     await ctx.send('Hi! 我是用來查詢天氣的機器人')
 
 
-bot.run(os.getenv('DISCORD_WEATHER_BOT_TOKEN'))
+bot.run(token)
 
