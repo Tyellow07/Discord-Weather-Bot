@@ -22,7 +22,7 @@ async def on_message(message):
         await message.channel.send('晚安')
     
     if '晚安' in message.content:
-        await message.channel.send('不早安')
+        await message.channel.send('早安')
     
     if '午安' in message.content:
         await message.channel.send('牛安')
