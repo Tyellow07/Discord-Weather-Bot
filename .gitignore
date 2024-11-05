@@ -2,3 +2,4 @@ restart.sh
 regit.sh
 nohup.out
 venv/
+.gitignore
