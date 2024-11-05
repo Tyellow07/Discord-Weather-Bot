@@ -2,3 +2,4 @@ nohup.out
 venv/
 .DS_Store
 Discord_Weather_Bot.png
+.gitignore
