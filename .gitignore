@@ -1,5 +1,4 @@
+restart.sh
+regit.sh
 nohup.out
 venv/
-.DS_Store
-regit.sh
-restart.sh
