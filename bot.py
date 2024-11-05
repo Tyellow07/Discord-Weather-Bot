@@ -19,15 +19,17 @@ async def on_message(message):
         return
 
     if '早安' in message.content:
-        await message.channel.send('晚安')
+        await message.channel.send('晚安!')
     
     if '晚安' in message.content:
-        await message.channel.send('早安')
+        await message.channel.send('早安!')
     
     if '午安' in message.content:
-        await message.channel.send('牛安')
+        await message.channel.send('牛安!')
+    
+    if '安安' in message.content:
+        await message.channel.send('安安安!')
 
-    await bot.process_commands(message)
 
 @bot.command()
 async def ping(ctx):
@@ -36,7 +38,6 @@ async def ping(ctx):
 @bot.command()
 async def 你是誰(ctx):
     await ctx.send('Hi! 我是用來查詢天氣的機器人')
-
 
 bot.run(token)
 
